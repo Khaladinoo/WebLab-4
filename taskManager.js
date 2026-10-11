@@ -19,5 +19,14 @@ class Task {
     toggle(){
         return new Task(this.id, this.title, !this.completed);
     }
+}
 
+class TaskManager {
+    constructor() {
+        this.tasks = [];
+    }
+    setTasks(newTasks){
+        this.tasks = [...newTasks];
+    }
+    
 }
