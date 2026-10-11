@@ -10,3 +10,4 @@ function fetchTasks(){
         }, 1500);
     })
 }
+export { fetchTasks };
