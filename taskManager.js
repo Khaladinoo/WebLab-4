@@ -33,6 +33,7 @@ class TaskManager {
     }
     removeTask(taskId) {
         this.tasks = this.tasks.map(task => task.id === taskId ? task.toggle() : task);
-        
+
     }
 }
+export { Task, TaskManager};
