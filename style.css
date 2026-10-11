@@ -20,3 +20,8 @@ body{
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+.task.completed span {
+    text-decoration: line-through;
+    color: #888888;
+    
+}
