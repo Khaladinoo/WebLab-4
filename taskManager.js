@@ -28,5 +28,8 @@ class TaskManager {
     setTasks(newTasks){
         this.tasks = [...newTasks];
     }
+    addTask(task) {
+        this.tasks = [...this.tasks, task];
+    }
     
 }
