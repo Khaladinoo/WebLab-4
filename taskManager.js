@@ -31,5 +31,8 @@ class TaskManager {
     addTask(task) {
         this.tasks = [...this.tasks, task];
     }
-    
+    removeTask(taskId) {
+        this.tasks = this.tasks.map(task => task.id === taskId ? task.toggle() : task);
+        
+    }
 }
