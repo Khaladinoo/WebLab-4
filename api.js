@@ -5,5 +5,8 @@ function fetchTasks(){
             {id: 2, title: "Review Data Structures Notes", completed: true},
             {id: 3, title: "Prepare Computer Architecture Presentation", completed: false}  
         ];
+        setTimeout(() => {
+            resolve(rawTasks);
+        }, 1500);
     })
 }
