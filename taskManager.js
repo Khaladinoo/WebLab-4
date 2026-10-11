@@ -1,7 +1,7 @@
 class Task {
-    @param {number|string} id
-    @param {string} title
-    @param {boolean} completed
+  //  @param {number|string} id
+   // @param {string} title
+  //  @param {boolean} completed
 
     constructor(id, title, completed = false){
         Object.defineProperty(this, 'id', {
@@ -14,6 +14,10 @@ class Task {
         this.completed = completed;
     }
 
-    
+   // @returns {Task}
+
+    toggle(){
+        return new Task(this.id, this.title, !this.completed);
+    }
 
 }
