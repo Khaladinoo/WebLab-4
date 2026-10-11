@@ -6,7 +6,7 @@ class Task {
     constructor(id, title, completed = false){
         Object.defineProperty(this, 'id', {
             value: id,
-            writable: false
+            writable: false,
             configurable: false,
             enumerable: true
         });
