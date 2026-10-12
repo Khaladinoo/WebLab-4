@@ -32,6 +32,9 @@ function render(){
     const titleSpan = document.createElement('span');
     titleSpan.textContent = task.title;
 
+    const btnGroup = document.createElement('div');
+
+
 
 
    })
