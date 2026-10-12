@@ -15,5 +15,8 @@ loadTasksBtn.addEventListener('click', async () => {
         const taskInstances = parsedData.map(item => new Task(item.id, item.title, item.completed));
         manager.setTasks(taskInstances);
         render();
+        statusMessage.textContent = "";
+    }catch(error){
         
-    };
+    }
+});
