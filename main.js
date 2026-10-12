@@ -8,5 +8,5 @@ const statusMessage = document.getElementById('statusMessage');
 
 loadTasksBtn.addEventListener('click', async () => {
     try {
-
+        statusMessage.textContent = "Loading tasks...";
     };
