@@ -10,4 +10,6 @@ loadTasksBtn.addEventListener('click', async () => {
     try {
         statusMessage.textContent = "Loading tasks...";
         const rawData = await fetchTasks();
+        const jsonString = JSON.stringify(rawData);
+        const parsedData = JSON.parse(jsonString);
     };
