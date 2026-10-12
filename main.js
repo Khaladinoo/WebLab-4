@@ -17,6 +17,7 @@ loadTasksBtn.addEventListener('click', async () => {
         render();
         statusMessage.textContent = "";
     }catch(error){
-        
+        statusMessage.textContent = "Error loading tasks. please try again.";
+        console.error("Task loading error:", error);
     }
 });
