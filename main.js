@@ -12,4 +12,6 @@ loadTasksBtn.addEventListener('click', async () => {
         const rawData = await fetchTasks();
         const jsonString = JSON.stringify(rawData);
         const parsedData = JSON.parse(jsonString);
+        const taskInstances = parsedData.map(item => new Task(item.id, item.title, item.completed));
+        
     };
