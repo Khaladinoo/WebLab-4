@@ -21,3 +21,7 @@ loadTasksBtn.addEventListener('click', async () => {
         console.error("Task loading error:", error);
     }
 });
+
+function render(){
+   
+}
