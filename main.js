@@ -28,5 +28,11 @@ function render(){
    manager.tasks.forEach(task => {
     const taskDiv = document.createElement('div');
     taskDiv.className = `task ${task.completed ? 'completed' : ''}`;
+
+    const titleSpan = document.createElement('span');
+    titleSpan.textContent = task.title;
+
+
+
    })
 }
