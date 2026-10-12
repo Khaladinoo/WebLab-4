@@ -14,4 +14,6 @@ loadTasksBtn.addEventListener('click', async () => {
         const parsedData = JSON.parse(jsonString);
         const taskInstances = parsedData.map(item => new Task(item.id, item.title, item.completed));
         manager.setTasks(taskInstances);
+        render();
+        
     };
