@@ -38,6 +38,7 @@ function render(){
     deleteBtn.textContent = 'Delete';
     deleteBtn.addEventListener('click', () => {
         manager.removeTask(task.id);
+        render();
     });
 
 
