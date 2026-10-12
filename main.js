@@ -34,8 +34,14 @@ function render(){
 
     const btnGroup = document.createElement('div');
 
+    const toggleBtn = document.createElement('button');
+    deleteBtn.textContent = 'Delete';
+    deleteBtn.addEventListener('click', () => {
+        manager.removeTask(task.id);
+    });
 
 
 
-   })
+
+   });
 }
