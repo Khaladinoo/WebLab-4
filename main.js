@@ -46,5 +46,6 @@ function render(){
     taskDiv.appendChild(titleSpan);
     taskDiv.appendChild(btnGroup);
 
+    taskListContainer.appendChild(taskDiv);
    });
 }
