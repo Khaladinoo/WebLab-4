@@ -42,8 +42,9 @@ function render(){
     });
     btnGroup.appendChild(toggleBtn);
     btnGroup.appendChild(deleteBtn);
-
-
+    
+    taskDiv.appendChild(titleSpan);
+    taskDiv.appendChild(btnGroup);
 
    });
 }
