@@ -34,12 +34,13 @@ function render(){
 
     const btnGroup = document.createElement('div');
 
-    const toggleBtn = document.createElement('button');
+    const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Delete';
     deleteBtn.addEventListener('click', () => {
         manager.removeTask(task.id);
         render();
     });
+    
     btnGroup.appendChild(toggleBtn);
     btnGroup.appendChild(deleteBtn);
     
