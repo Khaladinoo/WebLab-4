@@ -1,8 +1,4 @@
 class Task {
-  //  @param {number|string} id
-   // @param {string} title
-  //  @param {boolean} completed
-
     constructor(id, title, completed = false){
         Object.defineProperty(this, 'id', {
             value: id,
@@ -13,8 +9,6 @@ class Task {
         this.title = title;
         this.completed = completed;
     }
-
-   // @returns {Task}
 
     toggle(){
         return new Task(this.id, this.title, !this.completed);
@@ -34,6 +28,11 @@ class TaskManager {
     removeTask(taskId) {
         this.tasks = this.tasks.map(task => task.id === taskId ? task.toggle() : task);
 
+    }
+    toggleTask(taskId) {
+        this.tasks = this.tasks.map(task => 
+            task.id === taskId ? task.toggle() : task
+        );
     }
 }
 export { Task, TaskManager};
