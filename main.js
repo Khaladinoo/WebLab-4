@@ -24,4 +24,8 @@ loadTasksBtn.addEventListener('click', async () => {
 
 function render(){
    taskListContainer.innerHTML = '';
+
+   manager.tasks.forEach(task => {
+    
+   })
 }
