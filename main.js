@@ -26,6 +26,7 @@ function render(){
    taskListContainer.innerHTML = '';
 
    manager.tasks.forEach(task => {
-    
+    const taskDiv = document.createElement('div');
+    taskDiv.className = `task ${task.completed ? 'completed' : ''}`;
    })
 }
