@@ -40,7 +40,8 @@ function render(){
         manager.removeTask(task.id);
         render();
     });
-
+    btnGroup.appendChild(toggleBtn);
+    btnGroup.appendChild(deleteBtn);
 
 
 
