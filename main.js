@@ -23,5 +23,5 @@ loadTasksBtn.addEventListener('click', async () => {
 });
 
 function render(){
-   
+   taskListContainer.innerHTML = '';
 }
